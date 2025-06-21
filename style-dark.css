@@ -1,0 +1,776 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  padding-top: 80px; 
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/*Cabeçalho principal */
+#logo-cabeçalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #070a0f;
+  z-index: 9999;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  height: auto;
+  border-bottom: 2px solid green;
+}
+
+.lado-esquerdo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lado-direito {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.lado-direito a {
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.lado-direito a:hover {
+  color: green;
+}
+
+.btn-toggle {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  outline: none;
+}
+
+.btn-toggle:focus {
+  box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.6);
+  border-radius: 4px;
+}
+
+#logo-cabeçalho img {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+#logo-cabeçalho p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Cabeçalho2 */
+#titulo-cabecalho {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 15px;
+  background-color: #0d1117;
+}
+
+.futuro-vertical {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  text-align: center;
+  border-right: 2px solid #F5F5DC;
+  padding-right: 10px;
+  color: #F5F5DC;
+  transition: padding-right 0.3s ease, margin-left 0.3s ease;
+}
+
+#titulo-cabecalho h1 {
+  font-size: 1.4em;
+  margin: 0;
+  padding-left: 10px;
+  color: #F5F5DC;
+  font-family: sans-serif;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  background-color: #000;
+  border-top: 50px solid #070a0f;
+  border-top-style: solid;
+  border-top-width: 50px;
+  border-top-color: #070a0f;
+  border-top: 1px solid #333333; 
+}
+
+figure {
+  position: relative;
+  left: 0;
+  width: 300%; /* 3 slides */
+  display: flex;
+  animation: slide 30s infinite;
+  overflow: visible;
+}
+
+.slide {
+  position: relative;
+  width: 33.33%;
+  overflow: visible;
+}
+
+.slide img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+/* textos dos slides */
+.slide h5 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: #c9d1d9;
+  font-size: 1.9em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Animação nos slides */
+@keyframes slide {
+  0%, 25% { left: 0%; }
+  30%, 55% { left: -100%; }
+  60%, 85% { left: -200%; }
+  90%, 100% { left: 0%; }
+}
+
+
+#box {
+  position: relative;
+  padding: 166px;
+  text-align: center;
+}
+
+#box h4 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+/* Container2 */
+#container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  padding: 100px;
+  background-color: #161b22;
+  transition: padding 0.5s ease, gap 0.5s ease, background-color 0.5s ease;
+}
+
+#container2:hover {
+  padding: 80px;
+  background-color: #21262d;
+}
+
+.texto p {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.texto p:hover {
+  color: green;
+}
+
+.texto {
+  font-size: 16px;
+}
+
+#container2 img {
+  width: 45%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#container2 img:hover {
+  transform: scale(1.05);
+}
+
+/* Container3 */
+#container3 {
+  height: 66px;
+  background-color: #7BAC49;
+}
+
+#container3 p {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50%;
+}
+
+/* Carrossel manual */
+.carousel-manual {
+  max-width: 1440px;
+  height: 650px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.slides-manual {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide-m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide-m img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Mostrar slide ativo conforme input selecionado */
+#m1:checked ~ .slides-manual .s1,
+#m2:checked ~ .slides-manual .s2,
+#m3:checked ~ .slides-manual .s3,
+#m4:checked ~ .slides-manual .s4,
+#m5:checked ~ .slides-manual .s5 {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Setas */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 12px 17px;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slide-m h4 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.8em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  box-sizing: border-box;
+}
+
+/* Cards */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #081c18;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  transition: background-color 0.3s ease, gap 0.3s ease;
+}
+
+.cards-container:hover {
+  gap: 30px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  width: 320px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background-color: #eaeaea;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid white;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+  color: green;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #444;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.card:hover p {
+  color: #222;
+}
+
+#card-virado {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+#card-virado:hover {
+  transform: rotate(45deg) scale(1.05);
+}
+
+/* Container5= */
+#container5 {
+  padding: 196px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#container5 h3 {
+  font-size: 30px;
+}
+
+/*Container7*/
+#container7 {
+  background-color: #0d1117;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#container7 h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  background-color: #0d1117;
+}
+
+.entrevista {
+  background-color: #161b22;
+  padding: 20px;
+  border-left: 4px solid #4CAF50;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.entrevista .fonte {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.entrevista .fonte a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.entrevista .fonte a:hover {
+  text-decoration: underline;
+}
+
+.placa {
+  text-align: center;
+}
+
+/*  Container Cartões */
+.container-cartoes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px;
+  background-color: #161b22;
+  transition: background-color 0.3s ease, gap 0.3s ease;
+}
+
+.container-cartoes:hover {
+  background-color: #081c18;
+  gap: 30px;
+}
+
+.cartao {
+  background-color: #49ac51;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cartao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  background-color: #8fc15f;
+}
+
+.cartao h3 {
+  margin-bottom: 15px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.cartao:hover h3 {
+  color: #e0ffe0;
+}
+
+.cartao p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.cartao:hover p {
+  color: #d0f0d0;
+}
+
+/* Imagens do tema*/
+.img-tema {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.img-tema img {
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.imagem-horizontal {
+  width: 45%;
+  max-width: 500px;
+  height: auto;
+}
+
+.imagem-vertical {
+  width: 28%;
+  max-width: 150px;
+  height: auto;
+}
+
+.imagem-reduzida {
+  margin-top: -90px;
+  width: 1800px;
+  height: auto;
+}
+
+/*  Container6*/
+#container6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px;
+}
+
+.texto-lado {
+  flex: 1;
+  font-size: 20px;
+}
+
+.imagem-lado {
+  width: 300px;
+  height: auto;
+}
+
+.texto-lado h3 {
+  font-size: 30px;
+}
+
+/* ===== Rodapé ===== */
+#rodape {
+  background-color: #333333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.conteudo-rodape h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.conteudo-rodape h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.conteudo-rodape p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.creditos-rodape {
+  margin-top: 30px;
+  font-size: 16px;
+  color: white;
+}
+
+/* ===== Media Query para telas pequenas (max-width: 600px) ===== */
+@media (max-width: 600px) {
+  body {
+    padding-top: 60px;
+    overflow-x: hidden; 
+  }
+
+  #logo-cabeçalho {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #titulo-cabecalho {
+    flex-direction: row; 
+    gap: 15px;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .futuro-vertical {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    border-bottom: none;
+    padding: 0 10px;
+    font-size: 1em;
+    margin-left: 10px;
+  }
+
+  #titulo-cabecalho h1 {
+    font-size: 1.2em;
+    padding-left: 0;
+    line-height: 1.4;
+  }
+
+  #container3 {
+    background-color: #7BAC49;
+    padding: 15px;
+    height: auto;
+  }
+
+  #container3 p {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .slide-m img {
+    height: 250px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card h3 {
+    font-size: 1.1em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+
+  #container5 {
+    padding: 40px 15px;
+    font-size: 16px;
+  }
+
+  #container5 h3 {
+    font-size: 1.8em;
+  }
+
+  #container7 {
+    padding: 20px 10px;
+  }
+
+  #container7 h3 {
+    font-size: 1.5em;
+  }
+
+  .entrevista {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .placa img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-cartoes {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .cartao {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  .cartao h3 {
+    font-size: 1.2em;
+  }
+
+  .cartao p {
+    font-size: 0.95em;
+  }
+
+  .img-tema {
+    height: auto;
+    padding: 10px;
+  }
+
+  .imagem-reduzida {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #container6 {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .texto-lado {
+    font-size: 16px;
+  }
+
+  .texto-lado h3 {
+    font-size: 1.5em;
+  }
+
+  #rodape {
+    padding: 20px 10px;
+  }
+
+  .conteudo-rodape h3 {
+    font-size: 1.8em;
+  }
+
+  .conteudo-rodape h4 {
+    font-size: 1.2em;
+  }
+
+  .conteudo-rodape p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .creditos-rodape {
+    font-size: 14px;
+  }
+}

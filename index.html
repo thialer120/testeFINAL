@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+<!-- Estilo claro -->
+    <link rel="stylesheet" href="style-light.css">
+</head>
+<body>
+
+<!-- Cabeçalho fixo -->
+<header>
+    <div id="logo-cabeçalho">
+        <!-- Lado esquerdo logo e texto -->
+        <div class="lado-esquerdo">  
+            <a href="#">
+                <img src="./imagens/imagem3.png" alt="Logo de uma casa, cor preta, pequena">
+            </a>
+            <p>Bem-vindo ao Futuro</p>
+        </div>
+
+        <!-- Lado direito botões e links -->
+        <div class="lado-direito">
+            <!-- Botões para modo claro e escuro -->
+        <a href="index.html" class="btn-toggle light-mode">🌞</a>
+<a href="index-dark-pt.html" class="btn-toggle dark-mode">🌙</a>
+
+            <!-- Links da troca de idioma -->
+            <a href="index.html">Português</a>
+            <a href="index-light-en.html">English</a>
+            <a href="index-light-es.html">Espanõl</a>
+        </div>
+    </div>
+
+    <!-- Título principal -->
+    <div id="titulo-cabecalho">
+        <div class="futuro-vertical">
+            <span>FU</span>
+            <span>TU</span>
+            <span>RO</span>
+        </div>
+        <h1>União entre o campo que produz e a cidade que consome!</h1>
+    </div>
+</header>
+
+<!--Carrossel de imagens automáticas-->
+<div class="slider">
+    <figure>
+        <div class="slide">
+            <img src="./imagens/1000087673.jpg" alt="Imagem de paisagem para o campo">
+            <h5>A TECNOLOGIA VEM MUDANDO A FORMA COMO O CAMPO ALIMENTA A CIDADE, CONECTANDO GERAÇÔES E PROMOVENDO SUSTENTABILIDADE.</h5>
+        </div>
+        <div class="slide">
+            <h5>A TECNOLOGIA VEM MUDANDO A FORMA COMO O CAMPO ALIMENTA A CIDADE, CONECTANDO GERAÇÔES E PROMOVENDO SUSTENTABILIDADE.</h5>
+            <img src="./imagens/1000087615.jpg" alt="Imagem de um drone na grama ">
+        </div>
+        <div class="slide">
+            <h5>A TECNOLOGIA VEM MUDANDO A FORMA COMO O CAMPO ALIMENTA A CIDADE, CONECTANDO GERAÇÔES E PROMOVENDO SUSTENTABILIDADE.</h5>
+            <img src="./imagens/1000087639.jpg" alt="Imagem de uma placa solar">
+        </div>
+    </figure>
+</div>
+
+<!-- Slogan do site == -->
+<div id="box">
+    <h4>TECNOLOGIA, INOVAÇÂO, SOLUÇÂO</h4> 
+</div>
+
+<!-- Texto: campo de ontem-->
+<div id="container2">
+    <div class="texto">
+        <h1>O campo de ontem</h1>
+        <br>
+        <p>
+            Por muito tempo, o campo foi palco de um trabalho intenso e marcado pelo esforço físico,
+            onde a produção dependia diretamente da força humana e de técnicas artesanais, transmitidas de geração em geração.
+        </p>
+    </div>
+    <img src="./imagens/img-imagem1.jpg" alt="Imagem de uma paisagem para o campo">
+</div>
+
+<!-- Frase antes da imagem -->
+<div id="container3">
+    <p>
+        Hoje, a tecnologia modernizou o campo com máquinas, drones e sistemas inteligentes, tornando a produção mais eficiente e sustentável.
+    </p>
+    <p>Veja nas imagens como a inovação está presente em cada etapa:</p>
+</div>
+
+<!-- Carrossel de imagens manuais -->
+<div class="carousel-manual">
+    <!-- Inputs para controle manual -->
+    <input type="radio" name="manual" id="m1" checked>
+    <input type="radio" name="manual" id="m2">
+    <input type="radio" name="manual" id="m3">
+    <input type="radio" name="manual" id="m4">
+    <input type="radio" name="manual" id="m5">
+
+    <div class="slides-manual">
+        <!-- Slide 1 -->
+        <div class="slide-m s1">
+            <h4>1. Estudo e Planejamento, dados e análises orientam as decisões no campo.</h4>
+            <img src="./imagens/1000087629.jpg" alt="Imagem de uma TV reprouzindo e representando gráficos e planejamentos">
+            <label for="m5" class="prev">&#10094;</label>
+            <label for="m2" class="next">&#10095;</label>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide-m s2">
+            <h4>2. Produção no Campo, tecnologia e técnica trabalham juntas para cultivar com eficiência.</h4>
+            <img src="./imagens/1000087675.jpg" alt="Imagem rural com um galpão com trator">
+            <label for="m1" class="prev">&#10094;</label>
+            <label for="m3" class="next">&#10095;</label>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide-m s3">
+            <h4>3. Colheita e Transporte, o alimento é colhido e segue por rotas logísticas até a cidade.</h4>
+            <img src="./imagens/1000087345.jpg" alt="Imagem de um caminhao representando o transporte">
+            <label for="m2" class="prev">&#10094;</label>
+            <label for="m4" class="next">&#10095;</label>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide-m s4">
+            <h4>4. Distribuição e Consumo, chega aos mercados, restaurantes e casas.</h4>
+            <img src="./imagens/1000087272.jpg" alt="Imagem de frutas e verduras em um mercado">
+            <label for="m3" class="prev">&#10094;</label>
+            <label for="m5" class="next">&#10095;</label>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide-m s5">
+            <h4>5. Uso de Softwares para análise de resultados.</h4>
+            <img src="./imagens/2025-06-19 (1).png" alt="Imagem dos códigos de um software que são utilizados nas análises">
+            <label for="m4" class="prev">&#10094;</label>
+            <label for="m1" class="next">&#10095;</label>
+        </div>
+    </div>
+</div>
+
+<!-- Textos explicativos nos cards -->
+<section class="cards-container">
+    <div class="card">
+        <img src="./imagens/imagem2.jpg" alt="Paisagem com um carro, uma estrada e montanhas/campos atrás">
+        <h3>A Conexão Essencial</h3>
+        <p>O campo e a cidade mantêm uma relação vital: enquanto o campo produz, a cidade consome e impulsiona a economia. Essa interligação garante abastecimento de alimentos, fortalece o comércio e as comunidades.</p>
+    </div>
+    <div class="card">
+        <img src="./imagens/1000087234.jpg" alt="Imagem de prédios">
+        <h3>Impacto Social e Econômico</h3>
+        <p>A integração entre campo e cidade gera empregos, movimenta a economia e promove o desenvolvimento regional. Valoriza o trabalho rural e melhora a qualidade de vida nas comunidades produtoras.</p>
+    </div>
+    <div class="card">
+        <div id="card-virado">
+            <img src="./imagens/imagem4.jpg" alt="Imagem de uma plantação">
+        </div>
+        <h3>Sustentabilidade e Responsabilidade Ambiental</h3>
+        <p>Práticas sustentáveis garantem uma produção responsável, respeitando recursos naturais. Agricultura orgânica, manejo ecológico e uso racional da água asseguram alimentos saudáveis e preservam o meio ambiente.</p>
+    </div>
+</section>
+
+<!-- Texto explicando tecnologia no campo -->
+<div id="container5">
+    <h3>Por que a tecnologia está no campo?</h3>
+    <br><p>
+       
+A tecnologia está presente no campo para transformar a maneira como os alimentos são produzidos. Com o aumento da população mundial e a demanda por maior produção de forma rápida e sustentável, tornou-se essencial modernizar o setor agrícola. Hoje, o campo conta com tratores automatizados, drones para monitoramento das lavouras, sensores de umidade no solo, irrigação inteligente e até inteligência artificial para prever colheitas. Essas inovações ajudam os agricultores a tomar decisões mais precisas, economizar recursos, reduzir desperdícios e proteger o meio ambiente. Além disso, a tecnologia também melhora a qualidade de vida no campo, oferecendo mais conforto, segurança e conectividade para quem vive e trabalha longe dos centros urbanos.
+    </p>
+</div>
+
+<!-- Entrevista real e imagem -->
+<div id="container7">
+      <h3>Na prática: A voz de quem está no campo</h3>
+    <div class="entrevista">
+        <p><strong>“A conta de luz da irrigação era de R$ 500 a R$ 800 por mês. Depois que instalei os painéis solares, caiu para R$ 10.”</strong></p>
+        <p>— <strong>Juliano Luiz dos Santos</strong>, agricultor de São José do Belmonte (PE).</p>
+        <p>Ele aumentou a produção de maracujá após instalar um sistema fotovoltaico de 3,3 kWp, com seis painéis de 550W. A energia solar possibilitou economia e reinvestimento na propriedade.</p>
+        <p>Segundo dados da ANEEL, o número de sistemas fotovoltaicos em áreas rurais cresceu 63% de 2021 para 2022: de 42,9 mil para 70,2 mil conexões.</p>
+        <p class="fonte">Fonte: <a href="https://www.canalsolar.com.br" target="_blank">Canal Solar</a></p>
+    </div>
+    <div class="placa">
+        <img src="./imagens/1000087344.jpg" alt="Paineis solares">
+    </div>
+</div>
+
+<!-- Mini tópicos -->
+<div class="container-cartoes">
+    <div class="cartao"><h3>DRONES</h3><p>Monitoram plantações e identificam pragas.</p></div>
+    <div class="cartao"><h3>Sensores</h3><p>Controlam a irrigação de forma precisa, evitando desperdício de água.</p></div>
+    <div class="cartao"><h3>Máquinas</h3><p>Realizam o plantio e a colheita com mais rapidez</p></div>
+    <div class="cartao"><h3>Softwares</h3><p>Organizam dados sobre clima, solo e produção, ajudando na tomada de decisões.</p></div>
+</div>
+
+<!-- Imagens do tema -->
+<div class="img-tema">
+    <img src="./imagens/1000087676.jpg" alt="Imagem de uma plantação simples" class="imagem-horizontal">
+    <img src="./imagens/1000087617.jpg" alt="Imagem de um drone e seu controle" class="imagem-horizontal">
+    <img src="./imagens/1000087674.jpg" alt="Imagem de uma pequena plantação" class="imagem-vertical">
+</div>
+
+<!-- Curiosidade -->
+<div id="container6">
+    <div class="texto-lado">
+        <h3>Você sabia?</h3>
+        <p>
+ 
+O Paraná abriga uma das maiores redes de cooperativas agrícolas da América Latina, como a Coamo, sediada em Campo Mourão. Essas cooperativas são responsáveis por mais de 60% da produção de grãos do estado, fortalecendo a integração entre o campo e a cidade, segundo dados da Organização das Cooperativas do Paraná (Ocepar, 2023).
+        </p>
+    </div>
+</div>
+
+<form action="index.html" method="get">
+    <label for="preferencia">Qual você prefere?</label><br>
+    <select id="preferencia" name="preferencia" required>
+        <option value="" disabled selected hidden>-- Selecione --</option>
+        <option value="drones-tecnologicos-e-rapidos">🚁 Drones tecnológicos e rápidos</option>
+        <option value="placas-solares-energia-infinita">🔋 Placas solares com energia infinita</option>
+    </select>
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>
+
+
+<!-- Rodapé -->
+<footer id="rodape">
+    <div class="conteudo-rodape">
+        <div class="texto-rodape">
+            <h3>SOMOS O FUTURO!</h3>
+            <h4>Uma ponte entre o rural e o urbano</h4>
+            <p>Este site mostra como o caipira e o moderno podem se conectar para construir um futuro melhor.</p>
+        </div>
+        <div class="creditos-rodape">
+            <p>&copy; 2025 - Projeto Educacional | Todas as imagens usadas neste site são autorais, capturadas e produzidas por mim.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

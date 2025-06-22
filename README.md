@@ -8,6 +8,16 @@ O objetivo é mostrar como a conexão entre cidade e o campo é essencial e comp
 
 ---
 
+## 🔎 Sobre o conteúdo
+
+O site aborda de forma criativa e educativa a **conexão entre o campo e a cidade**, mostrando como essa relação é essencial para garantir alimentos, recursos e desenvolvimento para toda a sociedade.
+
+Também explicamos **como os produtos do campo chegam até a mesa das pessoas**, destacando a cadeia produtiva que envolve transporte, armazenamento, comercialização e consumo.
+
+Além disso, o projeto valoriza a **importância das tecnologias** no campo e na cidade, como drones, sensores, rastreamento e práticas sustentáveis, que tornam todo esse processo mais eficiente e benéfico para o meio ambiente e a população.
+
+---
+
 ## Tecnologias Utilizadas
 
 - HTML 5  
@@ -51,6 +61,3 @@ GitHub: @thialer120
 
 Licença
 Este projeto é de uso pessoal e educacional.
-Sinta-se à vontade para explorar e adaptar, com os devidos créditos.
-
-

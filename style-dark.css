@@ -13,6 +13,7 @@ body {
 }
 
 /*Cabeçalho principal */
+
 #logo-cabeçalho {
   position: fixed;
   top: 0;
@@ -26,7 +27,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   height: auto;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #49ac51;
 }
 
 .lado-esquerdo {
@@ -105,6 +106,7 @@ body {
   padding-right: 10px;
   color: #F5F5DC;
   transition: padding-right 0.3s ease, margin-left 0.3s ease;
+  
 }
 
 #titulo-cabecalho h1 {
@@ -116,17 +118,15 @@ body {
 }
 
 /* Slider */
+
 .slider {
   width: 100%;
   height: 750px;
   overflow: hidden;
   background-color: #000;
-  border-top: 50px solid #070a0f;
-  border-top-style: solid;
-  border-top-width: 50px;
-  border-top-color: #070a0f;
-  border-top: 1px solid #333333; 
+border-top: 1px solid #333333; 
 }
+
 
 figure {
   position: relative;
@@ -601,11 +601,14 @@ input[type="radio"] {
 
 /* ===== Media Query para telas pequenas (max-width: 600px) ===== */
 @media (max-width: 600px) {
+
+  /* ====== Corpo ====== */
   body {
-    padding-top: 60px;
-    overflow-x: hidden; 
+    padding-top: 60px; /* cabeçalho fixo menor em celular */
+    overflow-x: hidden; /* evita rolagem horizontal */
   }
 
+  /* ====== Cabeçalho Principal (#logo-cabeçalho) ====== */
   #logo-cabeçalho {
     flex-direction: column;
     height: auto;
@@ -613,15 +616,39 @@ input[type="radio"] {
     gap: 10px;
   }
 
+  .lado-esquerdo {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  #logo-cabeçalho img {
+    width: 60px; /* logo menor */
+  }
+
+  .lado-direito {
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .lado-direito a {
+    font-size: 0.9em;
+  }
+
+  /* ====== Título do cabeçalho (#titulo-cabecalho) ====== */
   #titulo-cabecalho {
-    flex-direction: row; 
+    /* Usando a segunda regra para manter layout em linha */
+    flex-direction: row; /* mantém o layout do PC */
     gap: 15px;
     padding: 20px;
     justify-content: flex-start;
     align-items: center;
+    text-align: center; /* também pode manter o alinhamento */
   }
 
+  /* Texto vertical "FUTURO" (.futuro-vertical) */
   .futuro-vertical {
+    /* Ajuste para layout em coluna */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -630,6 +657,10 @@ input[type="radio"] {
     padding: 0 10px;
     font-size: 1em;
     margin-left: 10px;
+
+    /* Remove margens extras da primeira regra */
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   #titulo-cabecalho h1 {
@@ -638,6 +669,59 @@ input[type="radio"] {
     line-height: 1.4;
   }
 
+  /* ====== Slider (.slider) ====== */
+  .slider {
+    height: 300px;
+    border-top-width: 20px;
+  }
+
+  .slide img {
+    height: 280px;
+  }
+
+  .slide h5 {
+    font-size: 1em;
+    padding: 10px 5px;
+  }
+
+  /* ====== Caixa de destaque (#box) ====== */
+  #box {
+    padding: 80px 15px 40px 15px;
+    overflow-wrap: break-word;
+  }
+
+  #box h4 {
+    top: auto;
+    position: relative;
+    font-size: 1.6em;
+    line-height: 1.3;
+    word-break: break-word;
+    white-space: normal;
+    margin: 0 auto;
+  }
+
+  /* ====== Container 2 (#container2) ====== */
+  #container2 {
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  #container2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .texto p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .texto h1 {
+    font-size: 1.4em;
+  }
+
+  /* ====== Barra informativa (#container3) ====== */
   #container3 {
     background-color: #7BAC49;
     padding: 15px;
@@ -645,16 +729,39 @@ input[type="radio"] {
   }
 
   #container3 p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
     font-size: 1em;
     color: white;
     text-align: center;
     line-height: 1.4;
   }
 
+  /* ====== Carrossel manual (.carousel-manual) ====== */
+  .carousel-manual {
+    height: 350px;
+    margin: 20px 10px;
+  }
+
+.slide-m h4 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.8em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  box-sizing: border-box;
+}
+
   .slide-m img {
     height: 250px;
   }
 
+  /* ====== Cards (.cards-container e .card) ====== */
   .cards-container {
     flex-direction: column;
     padding: 30px 10px;
@@ -681,6 +788,7 @@ input[type="radio"] {
     font-size: 0.9em;
   }
 
+  /* ====== Container 5 (#container5) ====== */
   #container5 {
     padding: 40px 15px;
     font-size: 16px;
@@ -690,6 +798,7 @@ input[type="radio"] {
     font-size: 1.8em;
   }
 
+  /* ====== Container 7 - entrevista (#container7) ====== */
   #container7 {
     padding: 20px 10px;
   }
@@ -708,6 +817,7 @@ input[type="radio"] {
     height: auto;
   }
 
+  /* ====== Cartões menores (.container-cartoes e .cartao) ====== */
   .container-cartoes {
     flex-direction: column;
     padding: 20px 10px;
@@ -739,6 +849,7 @@ input[type="radio"] {
     margin-top: 0;
   }
 
+  /* ====== Container 6 (#container6) ====== */
   #container6 {
     flex-direction: column;
     padding: 20px 10px;
@@ -753,6 +864,7 @@ input[type="radio"] {
     font-size: 1.5em;
   }
 
+  /* ====== Rodapé (#rodape e conteúdo) ====== */
   #rodape {
     padding: 20px 10px;
   }
@@ -773,4 +885,5 @@ input[type="radio"] {
   .creditos-rodape {
     font-size: 14px;
   }
+
 }
